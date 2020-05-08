@@ -14,10 +14,10 @@
 # `git` リポジトリを作成する
 - `git`管理を行うディレクトリとして、`git_test`ディレクトリを作成し、移動します。
 - **`cmd, bash`**
-```bash
-makedir git_test
-cd git_test
-```
+  ```bash
+  makedir git_test
+  cd git_test
+  ```
 - `git init`コマンドを実行すると、`git`リポジトリが生成されます。
 - **`cmd, bash`**
     ```bash
