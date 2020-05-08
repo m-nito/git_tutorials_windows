@@ -16,5 +16,5 @@
     - そのため、以下のチュートリアルはコマンドプロンプトに加えて `bash` での操作を併記します。
 
 * [1. ローカル環境でのリポジトリの操作](local_repo.md)
-* [2. `github` からリポジトリを取得する](github_clone.md)
-* [3. `github` で自分のリポジトリをホスティングする](github_hosting.md)
+* [2. `github` で自分のリポジトリをホスティングする](github_hosting.md)
+* [3. `github` からリポジトリを取得する](github_clone.md)
