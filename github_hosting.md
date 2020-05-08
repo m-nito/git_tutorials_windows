@@ -13,7 +13,8 @@
 - ログイン状態で `github.com` にアクセスし、自分の `github` ダッシュボードを開きます。
 - リポジトリ一覧の`New`ボタンを押下し、新規リポジトリを作成します。
 - ![Image](./img/new.png)
-- リポジトリ作成画面が表示されるので、リポジトリ名を入力し、`Create repository` を選択します。
+- リポジトリ作成画面が表示されるので、任意のリポジトリ名を入力し、`Create repository` を選択します。
+  - リポジトリ名は何でも構いません。サジェストされるものを利用することもできます。
 - ![Image](./img/create.png)
   - `Public/Private` は、このリポジトリを公開する範囲を指定できます。
   - `Initialize this repository with a README` を有効にすると、`README.md` ファイルを作成します。
