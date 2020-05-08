@@ -29,51 +29,51 @@
 # `git` でファイルの管理を行う
 - `myfile.txt`という空のファイルを作成します。
   - **`cmd, bash`**
-   ```bash
-   # bash
-   touch myfile.txt
+    ```bash
+    # bash
+    touch myfile.txt
 
-   # cmd
-   copy nul > myfile.txt
-   ```
+    # cmd
+    copy nul > myfile.txt
+    ```
   - この時点では`git`リポジトリにローカルの変更は反映されていません。
     - ファイルを追加し、コミット（後述）を行うことでリポジトリに変更を反映できます。
 - `git add` コマンドを利用して、`git_test`ディレクトリ以下のファイルをリポジトリに登録します。
   - **`cmd, bash`**
-   ```bash
-   git add .
-   ```
+    ```bash
+    git add .
+    ```
   - `[OPTIONAL] git status` コマンドを実行すると、追加されるファイルが表示されます。
 - `git commit` コマンドを利用して、リポジトリに変更を反映します。
   - **`cmd, bash`**
-   ```bash
-   git commit -m "my first commit."
-   ```
+    ```bash
+    git commit -m "my first commit."
+    ```
 - `[OPTIONAL]` `git log` コマンドを利用して、変更（コミット）履歴を確認できます。
   - **`cmd, bash`**
-   ```bash
-   git log
-   ```
+    ```bash
+    git log
+    ```
   - `my first commit` がログに残っていることが確認できます。
 - `[OPTIONAL]` 現在のリポジトリを複製して、内容を確認してみます。
   - `git clone` コマンドを利用してリポジトリを復元します。
   - **`cmd, bash`**
-   ```bash
-   mkdir clone
-   cd clone
-   git clone ../../git_test
-   cd ..
-   ```
+    ```bash
+    mkdir clone
+    cd clone
+    git clone ../../git_test
+    cd ..
+    ```
   - 作成した `clone` ディレクトリの下に、コミット時点での `git_test` 全体がクローンされていることが確認できます。
   - この手順を実行した場合、作成した `clone` ディレクトリは削除しておきます。
 
 # ファイルの変更をステージングする
 - ファイル内容に変更を加えて、リポジトリに変更を反映してみます。
   - **`cmd, bash`**
-   ```bash
-  echo "changed text." > myfile.txt
-  git add .
-   ```
+    ```bash
+    echo "changed text." > myfile.txt
+    git add .
+    ```
   - 上記のように、`add` を改めて行う必要があります。
     - `git` が管理するファイルは、まず `add` によってステージングされる必要があるためです。
     - ステージングされた変更は `commit` コマンドによって確定されます。
@@ -82,7 +82,8 @@
 # `.gitignore` の追加
 - `.gitignore` および `mysecret.txt` という空のファイルを作成します。
 - `.gitignore` には `mysecret.*` という内容を記述します。
-  - ```bash
+  - **`cmd, bash`**
+    ```bash
     # bash
     touch mysecret.txt
     touch .gitignore
@@ -102,9 +103,9 @@
 # リポジトリにステージングされた変更をコミットする
 - `git` リポジトリに変更を正式に反映します。
   - **`cmd, bash`**
-   ```bash
-  git commit -am "edited myfile.txt"
-   ```
+    ```bash
+    git commit -am "edited myfile.txt"
+    ```
   - コミットメッセージには、どのような変更を行ったのか概要を記載します。
     - 日本語のコミットメッセージを書くこともできます。
   - `-a` オプションを付与することで、`git add` と同様の処理を行うことができます。
