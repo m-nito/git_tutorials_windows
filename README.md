@@ -1,4 +1,4 @@
-# git_tutorials_windows
+# git_tutorials_windows `[WIP]`
 
 - `git` はバージョン管理システムです。Linux カーネルの作者である Torvalds 氏によって作成されました。
   - ソースコードの変更管理や、オープンソースソフトウェア（OSS）開発において広く利用されています。
