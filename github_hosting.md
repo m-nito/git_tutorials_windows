@@ -74,4 +74,4 @@
     - もし差分が存在しなければ、何も起こりません。
   - `git pull origin master` コマンドを実行すると、`origin` つまり リモートとして登録された `github` の変更を、ローカルに反映できます。
     - ローカルの `README.md` を確認すると、`github` 上で行った編集が反映されていることが確認できます。
-![img](./push_pull.png)
+![img](./img/push_pull.png)
